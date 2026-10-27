@@ -1,90 +1,88 @@
 (() => {
   const $ = (selector, scope = document) => scope.querySelector(selector);
-  const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)];
+  const $$ = (selector, scope = document) => Array.from(scope.querySelectorAll(selector));
 
-  // Mobile navigation
-  const menuToggle = $('.menu-toggle');
-  const mobileMenu = $('.mobile-menu');
-  menuToggle?.addEventListener('click', () => {
-    const open = menuToggle.getAttribute('aria-expanded') !== 'true';
-    menuToggle.setAttribute('aria-expanded', String(open));
-    mobileMenu?.classList.toggle('open', open);
-    document.body.classList.toggle('menu-open', open);
-  });
-  $$('.mobile-menu a').forEach(link => link.addEventListener('click', () => {
-    menuToggle?.setAttribute('aria-expanded', 'false');
-    mobileMenu?.classList.remove('open');
-    document.body.classList.remove('menu-open');
-  }));
+  // Mobile navigation stays keyboard-friendly and closes after a destination is chosen.
+  const menuToggle = $(".menu-toggle");
+  const mobileMenu = $("#mobile-menu");
 
-  // Accessible interactive demo modal
-  const demoModal = $('#demo-modal');
-  let previouslyFocused = null;
-  const openDemo = () => {
-    if (!demoModal) return;
-    previouslyFocused = document.activeElement;
-    demoModal.classList.add('open');
-    demoModal.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-    $('[data-close-demo]', demoModal)?.focus();
+  const closeMenu = () => {
+    if (!menuToggle || !mobileMenu) return;
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "Open navigation");
+    mobileMenu.hidden = true;
+    document.body.classList.remove("menu-open");
   };
-  const closeDemo = () => {
-    if (!demoModal?.classList.contains('open')) return;
-    demoModal.classList.remove('open');
-    demoModal.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-    const returnFocus = previouslyFocused;
-    previouslyFocused = null;
-    if (returnFocus && typeof returnFocus.focus === 'function') returnFocus.focus();
-  };
-  $('#watch-demo')?.addEventListener('click', openDemo);
-  $$('[data-close-demo]').forEach(el => el.addEventListener('click', closeDemo));
-  document.addEventListener('keydown', event => {
-    if (event.key === 'Escape') {
-      closeDemo();
-      menuToggle?.setAttribute('aria-expanded', 'false');
-      mobileMenu?.classList.remove('open');
-      document.body.classList.remove('menu-open');
-    }
-    if (event.key === 'Tab' && demoModal?.classList.contains('open')) {
-      const focusable = $$('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])', demoModal)
-        .filter(element => element.offsetParent !== null);
-      if (!focusable.length) return;
-      const first = focusable[0];
-      const last = focusable[focusable.length - 1];
-      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
-      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
-    }
+
+  menuToggle?.addEventListener("click", () => {
+    if (!mobileMenu) return;
+    const shouldOpen = menuToggle.getAttribute("aria-expanded") !== "true";
+    menuToggle.setAttribute("aria-expanded", String(shouldOpen));
+    menuToggle.setAttribute("aria-label", shouldOpen ? "Close navigation" : "Open navigation");
+    mobileMenu.hidden = !shouldOpen;
+    document.body.classList.toggle("menu-open", shouldOpen);
   });
 
-  // Theme preview buttons
-  const descriptions = {
-    minimal: 'A quiet, minimal style with room for your words and photos.',
-    playful: 'A warm, expressive look for a personal digital gift.',
-    neon: 'Bold accents for a playful, eye-catching creation.'
-  };
-  $$('.theme-button').forEach(button => button.addEventListener('click', () => {
-    const theme = button.dataset.theme || 'minimal';
-    $$('.theme-button').forEach(item => item.classList.toggle('selected', item === button));
-    document.body.dataset.theme = theme;
-    const description = $('#theme-description');
-    if (description) description.textContent = descriptions[theme] || descriptions.minimal;
-  }));
-
-  // Build the illustrative creation activity grid deterministically.
-  $$('.heatmap').forEach((grid, gridIndex) => {
-    const total = grid.classList.contains('small-heatmap') ? 65 : 175;
-    const activeCount = grid.classList.contains('small-heatmap') ? 23 : 61;
-    for (let i = 0; i < total; i += 1) {
-      const cell = document.createElement('i');
-      const score = (i * 37 + gridIndex * 29 + (i % 7) * 11) % 100;
-      if (score < (activeCount / total) * 100) cell.className = score < 10 ? 'hot' : score < 24 ? 'warm' : 'mid';
-      grid.appendChild(cell);
-    }
+  $$("#mobile-menu a").forEach((link) => link.addEventListener("click", closeMenu));
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeMenu();
   });
 
-  // The product panels are illustrative previews, not controls for a separate utility app.
+  // Text-only example switcher. These are editorial examples, not product screenshots.
+  const examples = {
+    love: {
+      kicker: "A LITTLE LOVE NOTE",
+      title: "to my favourite person,",
+      message: "I made you a tiny corner of the internet. A place for the little things that somehow mean everything.",
+      signoff: "always, me.",
+      index: "01 — LOVE NOTE"
+    },
+    birthday: {
+      kicker: "ANOTHER TRIP AROUND THE SUN",
+      title: "today is all about you.",
+      message: "A little collection of good memories, ridiculous jokes, and all the reasons the world is better with you in it.",
+      signoff: "your biggest fan.",
+      index: "02 — BIRTHDAY"
+    },
+    memories: {
+      kicker: "THE LITTLE THINGS WE KEEP",
+      title: "remember this one?",
+      message: "The ordinary days that turned into our favourite stories. A place to keep the moments that still make me smile.",
+      signoff: "more memories soon.",
+      index: "03 — PHOTO STORY"
+    },
+    "just-because": {
+      kicker: "NO OCCASION NEEDED",
+      title: "just wanted you to know.",
+      message: "There doesn't have to be a big reason. Sometimes someone makes life better, and they deserve to hear it.",
+      signoff: "that's all. that's everything.",
+      index: "04 — JUST BECAUSE"
+    }
+  };
 
-  // Close the demo when jumping to another section from its action.
-  $$('[data-close-demo][href]').forEach(link => link.addEventListener('click', closeDemo));
+  const exampleButtons = $$(".template-option[data-example]");
+  const sampleFields = {
+    kicker: $("#sample-kicker"),
+    title: $("#sample-title"),
+    message: $("#sample-message"),
+    signoff: $("#sample-signoff"),
+    index: $("#sample-index")
+  };
+
+  exampleButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const example = examples[button.dataset.example];
+      if (!example) return;
+
+      exampleButtons.forEach((item) => {
+        const isActive = item === button;
+        item.classList.toggle("is-active", isActive);
+        item.setAttribute("aria-pressed", String(isActive));
+      });
+
+      Object.entries(sampleFields).forEach(([key, element]) => {
+        if (element) element.textContent = example[key];
+      });
+    });
+  });
 })();
