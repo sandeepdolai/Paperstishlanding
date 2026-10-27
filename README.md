@@ -1,6 +1,26 @@
 # Paper Stish landing page
 
-A responsive Paper Stish marketing landing page built with semantic HTML, CSS, and vanilla JavaScript. The page presents digital gifting, customizable website templates, photo editing, publishing, QR sharing, and theme previews in a single editorial-style experience.
+A responsive, text-first marketing page for Paper Stish, built with semantic HTML, CSS, and vanilla JavaScript.
+
+## Design direction
+
+- **No product photos or stock imagery.** The page explains the product through direct copy, typography, and a few text-only editorial examples.
+- Warm paper, ink, clay, muted gold, and sage colors; serif display type paired with clean sans-serif interface text.
+- Mobile navigation, accessible template-example switcher, FAQ disclosures, keyboard focus states, and reduced-motion support.
+- Responsive layouts for mobile, tablet, and desktop.
+
+## Product story
+
+Paper Stish helps people create personal digital gifts by bringing together:
+
+- Digital gifts — Create
+- Website templates — Personalize
+- Photo editor — Edit
+- QR sharing — Publish
+- Photo stories — Tell your story
+- Story Templates — Find your starting point
+
+The page describes the journey as choose a template → personalize words and photos → preview → publish and share. The message and template examples are illustrative copy, not screenshots or claims about a live user's creation.
 
 ## Run locally
 
@@ -12,17 +32,8 @@ python -m http.server 8000
 
 Then visit `http://localhost:8000/`.
 
-## Project structure
+## Before launch
 
-- `index.html` — page content and accessible interaction markup
-- `styles.css` — responsive layout, visual styling, and product-preview mockups
-- `script.js` — mobile navigation, demo modal, theme switcher, and illustrative controls
-- `assets/paper-stish-mark.svg` — Paper Stish monogram favicon
-- `assets/reddit-logo.svg` — Reddit logo displayed below the community quote
-
-## Production handoff notes
-
-- The product panels are illustrative HTML/CSS previews, not screenshots from a deployed Paper Stish application.
-- No unsupported price points or subscription terms are invented; the former empty pricing card is replaced with a clear feature overview until final commercial details are set.
-- Before public deployment, confirm final contact details and provide the official privacy policy and terms URLs. The footer routes those questions to the contact email currently present in the project.
-- Confirm live product functionality before making availability or performance claims.
+- Confirm where the primary calls to action should point when the creation flow is ready.
+- Add the official privacy policy and terms pages/URLs.
+- Verify product capabilities and operational details before adding pricing, availability, or performance claims.
