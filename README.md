@@ -4,9 +4,10 @@ A responsive, text-first marketing page for Paper Stish, built with semantic HTM
 
 ## Design direction
 
-- **No product photos or stock imagery.** The page explains the product through direct copy, typography, and a few text-only editorial examples.
-- Warm paper, ink, clay, muted gold, and sage colors; serif display type paired with clean sans-serif interface text.
-- Mobile navigation, accessible template-example switcher, FAQ disclosures, keyboard focus states, and reduced-motion support.
+- Clean white, black, and blue visual system: white `#FFFFFF`, black `#000000`, and blue `#3A83F7`.
+- Bold Inter typography with a modern, iOS-inspired hierarchy.
+- No stock imagery or fabricated product screenshots. The hero and template area use clearly editorial, text-based examples until real product assets are intentionally added.
+- Responsive navigation, accessible template-example switcher, FAQ disclosures, keyboard focus states, and reduced-motion support.
 - Responsive layouts for mobile, tablet, and desktop.
 
 ## Product story
@@ -20,7 +21,7 @@ Paper Stish helps people create personal digital gifts by bringing together:
 - Photo stories — Tell your story
 - Story Templates — Find your starting point
 
-The page describes the journey as choose a template → personalize words and photos → preview → publish and share. The message and template examples are illustrative copy, not screenshots or claims about a live user's creation.
+The page describes the journey as choose a template → personalize words and photos → preview → publish and share. The example copy in the page is illustrative, not a screenshot or claim about a live user's creation.
 
 ## Run locally
 
