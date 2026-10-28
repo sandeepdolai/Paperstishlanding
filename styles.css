@@ -210,7 +210,7 @@ button:focus-visible, a:focus-visible, summary:focus-visible {
 .hero h1 {
   margin: 0;
   font-family: var(--sans);
-  font-size: clamp(59px, 6.5vw, 88px);
+  font-size: clamp(59px, 6.5vw, 82px);
   font-weight: 900;
   line-height: .96;
   letter-spacing: -.078em;
