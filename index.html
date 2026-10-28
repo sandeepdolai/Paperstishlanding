@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="Create a digital gift with Paper Stish. Personalize a page, add your words, and share something made for someone who matters.">
+  <meta name="description" content="Create a personal digital gift with Paper Stish. Make a page with your words and photos, then share it with a link or QR code.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Paper Stish — Make it personal">
-  <meta property="og:description" content="Make a personal digital gift, shape your story, and share it with someone who matters.">
+  <meta property="og:description" content="Make a little corner of the internet for someone who matters.">
   <title>Paper Stish — Make it personal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/paper-stish-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -19,237 +19,222 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Paper Stish home">paper<span>stish</span><i aria-hidden="true">✳</i></a>
-
+    <a class="brand" href="#top" aria-label="Paper Stish home">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span></span>
+      <span>Paper Stish</span>
+    </a>
     <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="#features">What you can make</a>
+      <a href="#features">Product <span aria-hidden="true">⌄</span></a>
+      <a href="#templates">Templates <span aria-hidden="true">⌄</span></a>
       <a href="#how-it-works">How it works</a>
-      <a href="#templates">Find your starting point</a>
+      <a href="#occasions">Ideas</a>
+      <a href="#faq">FAQ</a>
     </nav>
-
-    <a class="header-cta" href="#template-playground">Make it personal <span aria-hidden="true">↗</span></a>
+    <div class="header-actions">
+      <a class="login-link" href="#how-it-works">Explore</a>
+      <a class="button button-dark button-small" href="#template-playground">Start creating</a>
+    </div>
     <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu">
       <span></span><span></span>
     </button>
   </header>
 
   <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
-    <a href="#features">What you can make</a>
+    <a href="#features">Product</a>
+    <a href="#templates">Templates</a>
     <a href="#how-it-works">How it works</a>
-    <a href="#templates">Find your starting point</a>
-    <a class="mobile-menu-cta" href="#template-playground">Make it personal ↗</a>
+    <a href="#occasions">Ideas</a>
+    <a href="#faq">FAQ</a>
+    <a class="mobile-menu-cta" href="#template-playground">Start creating</a>
   </nav>
 
   <main id="main">
     <section class="hero section-shell" id="top">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-star" aria-hidden="true">✳</span> A DIGITAL GIFT, WITH YOUR PERSONALITY IN IT</p>
-        <h1>how is this not<br><span>blowing up more,</span><br><em>my girlfriend thought i spent weeks on this lmao</em></h1>
-        <p class="hero-description">Make a little corner of the internet for someone who matters. Choose a website template, add your words and photos, make the details yours, then share it as a link or QR code.</p>
+        <h1>A little corner of the internet, <span>made just for them.</span></h1>
+        <p class="hero-description">Turn your words, photos, and favourite memories into a digital gift that feels like you. Start with a template, make it personal, and share it in a link.</p>
         <div class="hero-actions">
-          <a class="button button-dark" href="#template-playground">Find your starting point <span aria-hidden="true">↗</span></a>
-          <a class="text-link" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
+          <a class="button button-dark" href="#template-playground">Start creating for free <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#templates">Explore templates <span aria-hidden="true">→</span></a>
         </div>
-        <p class="hero-footnote"><span class="footnote-dot" aria-hidden="true"></span> Made from your words. Built around your memories.</p>
+        <p class="hero-note"><span class="note-check" aria-hidden="true">✓</span> Your words. Your photos. Your kind of thoughtful.</p>
       </div>
 
-      <aside class="letter-demo" aria-label="A text-only example of a digital gift">
-        <div class="letter-demo-top"><span>AN EXAMPLE, NOT A TEMPLATE</span><span class="letter-star" aria-hidden="true">✳</span></div>
-        <p class="letter-to">to my favourite person,</p>
-        <p class="letter-message">I made you a tiny corner of the internet.</p>
-        <p class="letter-submessage">For the little things I remember, the stories only we understand, and everything I never quite say out loud.</p>
-        <div class="letter-rule"></div>
-        <div class="letter-demo-bottom"><span>A LITTLE NOTE, MADE PERSONAL</span><span>01 / 01</span></div>
-        <div class="letter-edge" aria-hidden="true"></div>
+      <div class="hero-art" aria-label="Illustration of a personal letter, photos, and a heart" role="img">
+        <svg class="hero-illustration" viewBox="0 0 470 330" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M53 226C71 189 94 169 130 166" stroke="#171717" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M111 158L131 166L116 179" stroke="#171717" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M350 115C369 116 384 124 394 140" stroke="#171717" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M381 111L350 115L361 136" stroke="#171717" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <g transform="rotate(-8 125 102)">
+            <rect x="54" y="43" width="105" height="133" rx="4" fill="#fff" stroke="#171717" stroke-width="2.2"/>
+            <rect x="65" y="54" width="83" height="72" rx="2" fill="#D9EAF7"/>
+            <circle cx="105" cy="77" r="13" fill="#E5B56E"/>
+            <path d="M73 116L92 94L109 110L123 99L147 126H73V116Z" fill="#82A89C"/>
+            <path d="M69 141H139M69 150H125M69 159H115" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round"/>
+          </g>
+          <g transform="rotate(7 279 159)">
+            <rect x="198" y="50" width="155" height="207" rx="5" fill="#FFFDF8" stroke="#171717" stroke-width="2.5"/>
+            <path d="M218 72H266" stroke="#CAC4B9" stroke-width="2" stroke-linecap="round"/>
+            <path d="M218 85H328" stroke="#CAC4B9" stroke-width="2" stroke-linecap="round"/>
+            <path d="M218 98H311" stroke="#CAC4B9" stroke-width="2" stroke-linecap="round"/>
+            <path d="M244 153C244 137 263 132 274 147C285 132 304 137 304 153C304 173 274 192 274 192C274 192 244 173 244 153Z" fill="#CDE6E9" stroke="#171717" stroke-width="2.2" stroke-linejoin="round"/>
+            <path d="M218 221H321M218 232H302" stroke="#CAC4B9" stroke-width="2" stroke-linecap="round"/>
+          </g>
+          <g transform="rotate(10 351 243)">
+            <rect x="313" y="201" width="78" height="79" rx="3" fill="#F3D66B" stroke="#171717" stroke-width="2.2"/>
+            <path d="M327 220H375M327 231H365M327 242H371" stroke="#A88C35" stroke-width="2" stroke-linecap="round"/>
+            <path d="M340 259L351 248L362 259" stroke="#171717" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <path d="M170 34L174 45L185 49L174 53L170 64L166 53L155 49L166 45L170 34Z" fill="#DCEAFB" stroke="#171717" stroke-width="1.7" stroke-linejoin="round"/>
+          <path d="M401 174L404 182L412 185L404 188L401 196L398 188L390 185L398 182L401 174Z" fill="#CDE6E9" stroke="#171717" stroke-width="1.7" stroke-linejoin="round"/>
+          <path d="M65 278C82 268 99 266 115 270" stroke="#171717" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 6"/>
+        </svg>
+        <span class="art-label art-label-one">a note for you</span>
+        <span class="art-label art-label-two">keepsake no. 01</span>
+      </div>
+    </section>
+
+    <section class="product-preview section-shell" aria-label="Paper Stish workspace preview">
+      <div class="workspace-sidebar">
+        <div class="workspace-brand"><span class="mini-mark" aria-hidden="true">P</span><strong>Paper Stish</strong><span class="sidebar-chevron">⌄</span></div>
+        <div class="workspace-search"><span aria-hidden="true">⌕</span> Search</div>
+        <div class="workspace-nav">
+          <span class="nav-item is-current"><span aria-hidden="true">⌂</span> Home</span>
+          <span class="nav-item"><span aria-hidden="true">▧</span> My creations</span>
+          <span class="nav-item"><span aria-hidden="true">▤</span> Templates</span>
+          <span class="nav-item"><span aria-hidden="true">✎</span> Photo editor</span>
+          <span class="nav-item"><span aria-hidden="true">⌗</span> QR sharing</span>
+        </div>
+        <p class="sidebar-label">YOUR SPACE</p>
+        <div class="workspace-nav">
+          <span class="nav-item"><span class="folder-dot dot-blue"></span> A love note</span>
+          <span class="nav-item"><span class="folder-dot dot-yellow"></span> Birthday surprise</span>
+          <span class="nav-item"><span class="folder-dot dot-green"></span> Our story</span>
+        </div>
+        <div class="sidebar-bottom"><span class="avatar-small">S</span><span><strong>Your workspace</strong><small>Personal space</small></span><span class="sidebar-chevron">···</span></div>
+      </div>
+
+      <div class="workspace-main">
+        <div class="workspace-breadcrumb"><span aria-hidden="true">⌂</span> Home <span aria-hidden="true">/</span> <strong>My creations</strong><span class="preview-pill">PREVIEW</span></div>
+        <div class="workspace-heading">
+          <div class="page-icon" aria-hidden="true">♡</div>
+          <div><h2>A little love note</h2><p>A tiny page for a very big feeling.</p></div>
+          <button class="more-button" type="button" aria-label="More options">···</button>
+        </div>
+        <div class="workspace-tabs" aria-label="Preview sections"><span class="active">Overview</span><span>Content</span><span>Design</span><span>Share</span></div>
+        <div class="gift-canvas">
+          <div class="canvas-label"><span>MADE WITH A LITTLE LOVE</span><span>♡</span></div>
+          <p class="canvas-eyebrow">TO MY FAVOURITE PERSON,</p>
+          <h3>the little things<br>mean everything.</h3>
+          <p class="canvas-copy">For the moments that became memories, the jokes nobody else gets, and all the things I never quite say out loud.</p>
+          <div class="canvas-memory-row">
+            <div class="memory-tile memory-tile-blue"><span>01</span><strong>the first hello</strong><i aria-hidden="true">↗</i></div>
+            <div class="memory-tile memory-tile-yellow"><span>02</span><strong>our little world</strong><i aria-hidden="true">♡</i></div>
+          </div>
+          <div class="canvas-footer"><span>MADE JUST FOR YOU</span><span>ALWAYS, ME.</span></div>
+        </div>
+        <div class="workspace-status"><span><i></i> All changes saved on this device</span><span>Last edited just now</span></div>
+      </div>
+
+      <aside class="workspace-inspector">
+        <div class="inspector-heading"><span aria-hidden="true">✦</span><strong>Make it yours</strong><button class="more-button" type="button" aria-label="Inspector options">···</button></div>
+        <p class="inspector-intro">A few little details can make this feel like yours.</p>
+        <div class="inspector-group">
+          <span class="inspector-label">YOUR MESSAGE</span>
+          <div class="inspector-row"><span class="inspector-icon">T</span><span><strong>Add your words</strong><small>Write a message from the heart</small></span><b>›</b></div>
+          <div class="inspector-row"><span class="inspector-icon">▧</span><span><strong>Add your photos</strong><small>Bring your memories along</small></span><b>›</b></div>
+          <div class="inspector-row"><span class="inspector-icon">✧</span><span><strong>Choose a style</strong><small>Find the right feeling</small></span><b>›</b></div>
+        </div>
+        <div class="inspector-group">
+          <span class="inspector-label">QUICK START</span>
+          <button class="quick-start" type="button" data-jump="#template-playground"><span>♡</span> Love note <b>↗</b></button>
+          <button class="quick-start" type="button" data-jump="#templates"><span>✳</span> Birthday gift <b>↗</b></button>
+          <button class="quick-start" type="button" data-jump="#occasions"><span>▤</span> Photo story <b>↗</b></button>
+        </div>
+        <a class="inspector-cta" href="#template-playground">Start your own <span>→</span></a>
       </aside>
-      <div class="hero-orbit orbit-one" aria-hidden="true">your words</div>
-      <div class="hero-orbit orbit-two" aria-hidden="true">your moment</div>
     </section>
 
-    <section class="promise-strip section-shell" aria-label="What makes a Paper Stish gift personal">
-      <p><span>01</span> Your words, not a generic message</p>
-      <p><span>02</span> Your photos, placed with care</p>
-      <p><span>03</span> One page they can keep coming back to</p>
-    </section>
+    <div class="workspace-caption section-shell"><span>ONE PLACE FOR YOUR WORDS, PHOTOS, AND IDEAS.</span><span>A concept preview of the Paper Stish experience</span></div>
 
-    <section class="section section-shell" id="features">
+    <section class="section section-shell features-section" id="features">
       <div class="section-intro">
-        <p class="eyebrow">ONE CREATIVE SPACE</p>
-        <h2>Start with a feeling.<br><em>Make it into something.</em></h2>
-        <p>Paper Stish brings the pieces together—from choosing a design to putting the finishing touches on a gift that's unmistakably yours.</p>
+        <p class="eyebrow">A LITTLE SOMETHING FOR EVERY STORY</p>
+        <h2>Everything you need to<br>make it <span>personal.</span></h2>
+        <p>Bring your idea to life in one simple flow—from the first template to the moment you share it.</p>
       </div>
-
       <div class="feature-grid">
-        <a class="feature-card feature-card-large" href="#template-playground">
-          <span class="feature-number">01 / CREATE</span>
-          <span class="feature-symbol symbol-gift" aria-hidden="true">✳</span>
-          <h3>Digital gifts</h3>
-          <p>Turn a feeling into a thoughtful digital surprise for a birthday, an anniversary, or no reason at all.</p>
-          <span class="feature-link">Make a moment <span aria-hidden="true">↗</span></span>
-        </a>
-        <a class="feature-card" href="#templates">
-          <span class="feature-number">02 / PERSONALIZE</span>
-          <span class="feature-symbol symbol-template" aria-hidden="true">Aa</span>
-          <h3>Website templates</h3>
-          <p>Start with a layout, then make the words, colors, and details feel like you.</p>
-          <span class="feature-link">Find a starting point <span aria-hidden="true">↗</span></span>
-        </a>
-        <a class="feature-card" href="#template-playground">
-          <span class="feature-number">03 / EDIT</span>
-          <span class="feature-symbol symbol-photo" aria-hidden="true">▧</span>
-          <h3>Photo editor</h3>
-          <p>Refine your photos and bring the moments you love into the story you're making.</p>
-          <span class="feature-link">Make room for memories <span aria-hidden="true">↗</span></span>
-        </a>
-        <a class="feature-card" href="#how-it-works">
-          <span class="feature-number">04 / PUBLISH</span>
-          <span class="feature-symbol symbol-qr" aria-hidden="true">⌗</span>
-          <h3>QR sharing</h3>
-          <p>Publish your page and share it with a link or a QR code that's easy to open.</p>
-          <span class="feature-link">Ready when you are <span aria-hidden="true">↗</span></span>
-        </a>
-        <a class="feature-card" href="#story">
-          <span class="feature-number">05 / TELL YOUR STORY</span>
-          <span class="feature-symbol symbol-story" aria-hidden="true">“ ”</span>
-          <h3>Photo stories</h3>
-          <p>Bring words and favorite moments together in one place, in the order you want to remember them.</p>
-          <span class="feature-link">Tell it your way <span aria-hidden="true">↗</span></span>
-        </a>
-        <a class="feature-card feature-card-accent" href="#templates">
-          <span class="feature-number">06 / FIND YOUR START</span>
-          <span class="feature-symbol symbol-stories" aria-hidden="true">✧</span>
-          <h3>Story Templates</h3>
-          <p>Find a direction for your idea, then shape it around the person who's going to open it.</p>
-          <span class="feature-link">Explore the possibilities <span aria-hidden="true">↗</span></span>
-        </a>
+        <a class="feature-card" href="#template-playground"><span class="feature-icon feature-icon-blue">✳</span><h3>Digital gifts</h3><p>Create a thoughtful surprise for a birthday, an anniversary, or no reason at all.</p><span class="feature-link">Create a gift <b>↗</b></span></a>
+        <a class="feature-card" href="#templates"><span class="feature-icon feature-icon-yellow">▤</span><h3>Website templates</h3><p>Start with a layout and make the words, colors, and details your own.</p><span class="feature-link">Browse templates <b>↗</b></span></a>
+        <a class="feature-card" id="photo-editor" href="#template-playground"><span class="feature-icon feature-icon-green">▧</span><h3>Photo editor</h3><p>Arrange photos and little details to bring your favorite moments together.</p><span class="feature-link">Edit your photos <b>↗</b></span></a>
+        <a class="feature-card" href="#how-it-works"><span class="feature-icon feature-icon-lilac">⌗</span><h3>QR sharing</h3><p>Publish your page and make it easy to open with a link or QR code.</p><span class="feature-link">See how sharing works <b>↗</b></span></a>
+        <a class="feature-card" href="#occasions"><span class="feature-icon feature-icon-peach">“ ”</span><h3>Photo stories</h3><p>Put your photos and words together in the order you want to remember them.</p><span class="feature-link">Tell your story <b>↗</b></span></a>
+        <a class="feature-card" href="#templates"><span class="feature-icon feature-icon-blue">♡</span><h3>Story templates</h3><p>Find a starting point, then shape it around the person who will open it.</p><span class="feature-link">Find inspiration <b>↗</b></span></a>
       </div>
     </section>
 
-    <section class="statement-section" id="story">
-      <div class="statement-inner section-shell">
-        <p class="eyebrow">NOT JUST ANOTHER LINK</p>
-        <h2>It's the little details<br>that make it <em>yours.</em></h2>
-        <div class="statement-bottom">
-          <p>A message only you would write. A photo that brings the whole story back. A page that feels like it was made for one person—because it was.</p>
-          <span class="handwritten" aria-hidden="true">that's the point ↗</span>
+    <section class="templates-section" id="templates">
+      <div class="templates-layout section-shell" id="template-playground">
+        <div class="templates-copy">
+          <p class="eyebrow">START WITH A TEMPLATE</p>
+          <h2>What are you<br>making <span>today?</span></h2>
+          <p>Pick the kind of moment you're making, and use it as a starting point for your own words and memories.</p>
+          <div class="template-options" role="group" aria-label="Choose an example gift">
+            <button class="template-option is-active" type="button" data-example="love" aria-pressed="true"><span>♡</span> A love note</button>
+            <button class="template-option" type="button" data-example="birthday" aria-pressed="false"><span>✳</span> A birthday surprise</button>
+            <button class="template-option" type="button" data-example="memories" aria-pressed="false"><span>▧</span> A photo story</button>
+            <button class="template-option" type="button" data-example="just-because" aria-pressed="false"><span>✦</span> Just because</button>
+          </div>
+          <p class="template-note">Examples show how the writing can change. They are not screenshots of the live product.</p>
+        </div>
+        <div class="sample-page" aria-live="polite" aria-atomic="true">
+          <div class="sample-page-bar"><span class="sample-page-logo">P</span><span>YOUR PERSONAL PAGE</span><span class="sample-page-status"><i aria-hidden="true"></i> EXAMPLE</span></div>
+          <div class="sample-page-content"><p class="sample-kicker" id="sample-kicker">A LITTLE LOVE NOTE</p><h3 id="sample-title">to my favourite person,</h3><p class="sample-message" id="sample-message">I made you a tiny corner of the internet. A place for the little things that somehow mean everything.</p><p class="sample-signoff" id="sample-signoff">always, me.</p></div>
+          <div class="sample-page-footer"><span>MADE WITH PAPER STISH</span><span id="sample-index">01 — LOVE NOTE</span></div>
         </div>
       </div>
     </section>
 
     <section class="section section-shell how-section" id="how-it-works">
       <div class="section-intro">
-        <p class="eyebrow">FOUR STEPS, YOUR OWN STORY</p>
-        <h2>Easy to start.<br><em>Personal to finish.</em></h2>
-        <p>You don't need to be a designer. You just need an idea of what you want someone to feel.</p>
+        <p class="eyebrow">FROM IDEA TO THEIR INBOX</p>
+        <h2>Simple to make.<br><span>Lovely to receive.</span></h2>
+        <p>No design experience needed. Just an idea of what you want someone to feel.</p>
       </div>
       <div class="steps-list">
-        <article class="step">
-          <span class="step-index">01</span>
-          <div><h3>Choose a template</h3><p>Pick a starting point that fits the person, the occasion, or the feeling you want to share.</p></div>
-          <span class="step-end" aria-hidden="true">↘</span>
-        </article>
-        <article class="step">
-          <span class="step-index">02</span>
-          <div><h3>Personalize the details</h3><p>Add your words and photos. Adjust the parts that make it feel like your story, not everyone else's.</p></div>
-          <span class="step-end" aria-hidden="true">↘</span>
-        </article>
-        <article class="step">
-          <span class="step-index">03</span>
-          <div><h3>Preview the page</h3><p>Read it through, take another look, and make sure the little details feel right before you publish.</p></div>
-          <span class="step-end" aria-hidden="true">↘</span>
-        </article>
-        <article class="step">
-          <span class="step-index">04</span>
-          <div><h3>Publish and share</h3><p>Give your creation a link, or share it with a QR code. Now it has somewhere to live.</p></div>
-          <span class="step-end" aria-hidden="true">↗</span>
-        </article>
+        <article class="step"><span class="step-index">01</span><div><h3>Choose a template</h3><p>Pick a starting point that fits the person, the occasion, or the feeling.</p></div><span class="step-end">↗</span></article>
+        <article class="step"><span class="step-index">02</span><div><h3>Make it personal</h3><p>Add your words and photos, and adjust the little details until it feels right.</p></div><span class="step-end">↗</span></article>
+        <article class="step"><span class="step-index">03</span><div><h3>Preview your page</h3><p>Take another look and make sure every detail says what you want it to say.</p></div><span class="step-end">↗</span></article>
+        <article class="step"><span class="step-index">04</span><div><h3>Publish and share</h3><p>Share the page as a link or use a QR code to open it on another device.</p></div><span class="step-end">↗</span></article>
       </div>
     </section>
 
-    <section class="template-section" id="templates">
-      <div class="template-layout section-shell" id="template-playground">
-        <div class="template-copy">
-          <p class="eyebrow">A PLACE TO BEGIN</p>
-          <h2>What are you<br><em>making today?</em></h2>
-          <p>Every story starts somewhere. Choose a mood to see how a simple page can sound and feel different when you make it personal.</p>
-          <div class="template-options" role="group" aria-label="Choose an example gift">
-            <button class="template-option is-active" type="button" data-example="love" aria-pressed="true"><span>01</span> A love note</button>
-            <button class="template-option" type="button" data-example="birthday" aria-pressed="false"><span>02</span> A birthday surprise</button>
-            <button class="template-option" type="button" data-example="memories" aria-pressed="false"><span>03</span> A photo story</button>
-            <button class="template-option" type="button" data-example="just-because" aria-pressed="false"><span>04</span> Just because</button>
-          </div>
-          <p class="template-note">These are text-only examples to show the idea—not screenshots of the product.</p>
-        </div>
-
-        <div class="sample-page" aria-live="polite" aria-atomic="true">
-          <div class="sample-page-bar"><span>YOUR PAGE, YOUR WAY</span><span class="sample-page-status"><i aria-hidden="true"></i> PREVIEW</span></div>
-          <div class="sample-page-content">
-            <p class="sample-kicker" id="sample-kicker">A LITTLE LOVE NOTE</p>
-            <h3 id="sample-title">to my favourite person,</h3>
-            <p class="sample-message" id="sample-message">I made you a tiny corner of the internet. A place for the little things that somehow mean everything.</p>
-            <p class="sample-signoff" id="sample-signoff">always, me.</p>
-          </div>
-          <div class="sample-page-footer"><span>MADE WITH PAPER STISH</span><span id="sample-index">01 — LOVE NOTE</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-shell occasions-section" id="photo-editor">
-      <div class="occasions-heading">
-        <p class="eyebrow">FOR THE MOMENTS THAT STAY WITH YOU</p>
-        <h2>Big occasions.<br><em>Little just-becauses.</em></h2>
-      </div>
-      <div class="occasion-list" aria-label="Ideas for things to make">
-        <span>Birthdays <b>↗</b></span>
-        <span>Anniversaries <b>↗</b></span>
-        <span>Long-distance love <b>↗</b></span>
-        <span>Thank-you notes <b>↗</b></span>
-        <span>Photo memories <b>↗</b></span>
-        <span>Surprises for no reason <b>↗</b></span>
-      </div>
-      <p class="occasion-note">Whatever the occasion, the best part is that it comes from you.</p>
+    <section class="section section-shell occasions-section" id="occasions">
+      <div class="occasions-top"><div><p class="eyebrow">BIG OCCASIONS, LITTLE MOMENTS</p><h2>There's always a reason<br>to make someone <span>smile.</span></h2></div><p>Some things are too personal for a plain message.</p></div>
+      <div class="occasion-list"><a href="#template-playground">Birthdays <span>↗</span></a><a href="#template-playground">Anniversaries <span>↗</span></a><a href="#template-playground">Long-distance love <span>↗</span></a><a href="#template-playground">Thank-you notes <span>↗</span></a><a href="#template-playground">Photo memories <span>↗</span></a><a href="#template-playground">Just because <span>↗</span></a></div>
     </section>
 
     <section class="faq-section section-shell" id="faq">
-      <div class="faq-intro">
-        <p class="eyebrow">A FEW THINGS YOU MIGHT BE WONDERING</p>
-        <h2>Before you<br><em>make a little magic.</em></h2>
-      </div>
+      <div class="faq-intro"><p class="eyebrow">GOOD TO KNOW</p><h2>A few things<br>you might <span>wonder.</span></h2></div>
       <div class="faq-list">
-        <details>
-          <summary>What is Paper Stish?<span aria-hidden="true">+</span></summary>
-          <p>Paper Stish is a creative space for digital gifts, personalized website templates, photo editing, and photo stories. You can shape a page around a person or a moment, then publish and share it.</p>
-        </details>
-        <details>
-          <summary>Do I need design experience?<span aria-hidden="true">+</span></summary>
-          <p>No. Templates give you somewhere to begin. The personal part is in the words, photos, and details you choose to add.</p>
-        </details>
-        <details>
-          <summary>Can I use my own photos and words?<span aria-hidden="true">+</span></summary>
-          <p>Yes. The idea is to bring your own words and photos into a design, so the final page feels personal rather than pre-written.</p>
-        </details>
-        <details>
-          <summary>How do I share what I make?<span aria-hidden="true">+</span></summary>
-          <p>After publishing a page, you can share it with a link or a QR code, making it easy for someone to open on their device.</p>
-        </details>
+        <details><summary>What is Paper Stish?<span>+</span></summary><p>Paper Stish is a creative space for digital gifts, personalized website templates, photo editing, and photo stories. Make a page around a person or a moment, then publish and share it.</p></details>
+        <details><summary>Do I need design experience?<span>+</span></summary><p>No. Templates give you somewhere to begin. The personal part is in the words, photos, and details you choose to add.</p></details>
+        <details><summary>Can I use my own photos and words?<span>+</span></summary><p>Yes. The idea is to bring your own words and photos into a design, so the final page feels personal rather than pre-written.</p></details>
+        <details><summary>How do I share what I make?<span>+</span></summary><p>After publishing a page, you can share it with a link or a QR code, making it easy for someone to open on their device.</p></details>
       </div>
     </section>
 
     <section class="final-cta section-shell">
-      <p class="eyebrow">MAKE SOMETHING THEY'LL REMEMBER</p>
-      <h2>Not more stuff.<br><em>Something that means something.</em></h2>
-      <p>Your words. Your memories. A page made for one person.</p>
-      <a class="button button-paper" href="#template-playground">Find your starting point <span aria-hidden="true">↗</span></a>
-      <span class="cta-decoration cta-decoration-one" aria-hidden="true">for you,</span>
-      <span class="cta-decoration cta-decoration-two" aria-hidden="true">with love ✳</span>
+      <div><p class="eyebrow">MAKE SOMETHING PERSONAL</p><h2>A little thing.<br><span>A lot of meaning.</span></h2><p>Your words. Your memories. A page made for one person.</p></div>
+      <a class="button button-dark" href="#template-playground">Start creating <span aria-hidden="true">↗</span></a>
     </section>
-
   </main>
 
   <footer class="site-footer">
-    <a class="wordmark footer-wordmark" href="#top">paper<span>stish</span><i aria-hidden="true">✳</i></a>
+    <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><span></span><span></span></span><span>Paper Stish</span></a>
     <p>Made for the moments you want to make personal.</p>
-    <nav aria-label="Footer navigation"><a href="#features">Features</a><a href="#how-it-works">How it works</a><a href="#faq">FAQ</a></nav>
+    <nav aria-label="Footer navigation"><a href="#features">Product</a><a href="#templates">Templates</a><a href="#how-it-works">How it works</a><a href="#faq">FAQ</a></nav>
     <span class="footer-copyright">© 2026 Paper Stish</span>
   </footer>
 
