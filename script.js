@@ -85,4 +85,13 @@
       });
     });
   });
+  
+  // Quick-start actions in the workspace preview navigate to the relevant section.
+  $("[data-jump]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const target = document.querySelector(button.dataset.jump);
+      target?.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+    });
+  });
+
 })();
