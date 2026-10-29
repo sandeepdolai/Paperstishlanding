@@ -1,40 +1,41 @@
 # Paper Stish landing page
 
-A responsive, text-first marketing page for Paper Stish, built with semantic HTML, CSS, and vanilla JavaScript.
+A responsive, Notion-inspired marketing page for Paper Stish, built with semantic HTML, CSS, and vanilla JavaScript.
 
 ## Design direction
 
-- Clean white, black, and blue visual system: white `#FFFFFF`, black `#000000`, and blue `#3A83F7`.
-- Bold Inter typography with a modern, iOS-inspired hierarchy.
-- No stock imagery or fabricated product screenshots. The hero and template area use clearly editorial, text-based examples until real product assets are intentionally added.
-- Responsive navigation, accessible template-example switcher, FAQ disclosures, keyboard focus states, and reduced-motion support.
-- Responsive layouts for mobile, tablet, and desktop.
+- A compact, low-noise navigation and a split hero with a confident typographic hierarchy.
+- White canvas, near-black text, soft gray dividers, and restrained blue accents.
+- Real Paper Stish template artwork in the hero and template gallery. The Red Letter SVG is included locally in \`assets/\`; other shipped template-preview images load from the Paper Stish app's public template assets.
+- No fabricated dashboard screenshot or made-up usage statistics.
+- Responsive desktop, tablet, and mobile layouts; keyboard-accessible mobile navigation; visible focus styles; and reduced-motion support.
 
 ## Product story
 
-Paper Stish helps people create personal digital gifts by bringing together:
+Paper Stish brings together:
 
 - Digital gifts — Create
 - Website templates — Personalize
 - Photo editor — Edit
 - QR sharing — Publish
 - Photo stories — Tell your story
-- Story Templates — Find your starting point
+- Story templates — Find a starting point
 
-The page describes the journey as choose a template → personalize words and photos → preview → publish and share. The example copy in the page is illustrative, not a screenshot or claim about a live user's creation.
+The primary calls to action open the real Paper Stish template library at \`https://the-seriouseast-startup.vercel.app/website-templates\`.
 
 ## Run locally
 
-Open `index.html` in a modern browser, or start a local server from this folder:
+Open \`index.html\` in a browser, or start a local server from this directory:
 
-```bash
+\`\`\`bash
 python -m http.server 8000
-```
+\`\`\`
 
-Then visit `http://localhost:8000/`.
+Then visit \`http://localhost:8000/\`.
 
 ## Before launch
 
-- Confirm where the primary calls to action should point when the creation flow is ready.
-- Add the official privacy policy and terms pages/URLs.
-- Verify product capabilities and operational details before adding pricing, availability, or performance claims.
+- Confirm the canonical production domain and app links.
+- Ensure the app's public template-preview assets stay publicly reachable.
+- Confirm account, privacy, and terms links before adding them to the navigation.
+- Verify every product capability and plan limitation before adding pricing or availability claims.
